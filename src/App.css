@@ -23,14 +23,24 @@ header {
   .main-container{
     height: 600px;
     background-color: #666;
-    display: flex;
-    flex-direction: row;
+   
   }
   main{
-    width: 70%;
-    background-color: aqua;
+    
+    background-color: whitesmoke;
   }
-  aside{
-    width: 30%;
+ aside{
+   
     background-color: bisque;
+  }
+  footer{
+    background-color: #666;
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+
+  li{
+    list-style: none;
   }
