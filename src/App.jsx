@@ -1,12 +1,14 @@
 import './App.css'
-
+import tacsko from './assets/tacskó.jpg';
+import auto1 from './assets/auto1.jpg';
+import auto2 from './assets/auto2.jpg';
 function App() {
  
 
   return (
     <div className='container-fluid'>
       <header className='row'>
-  <h2 className='col'>Cities</h2>
+  <h2 className='col'>Kedvenc videóim és képeim</h2>
 </header>
     <nav className='row'>
     <ul className="nav col">
@@ -20,7 +22,7 @@ function App() {
     <a className="nav-link" href="#">Videók</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link " aria-disabled="true">Account</a>
+    <a className="nav-link ">Account</a>
   </li>
 </ul>
     </nav>
@@ -28,35 +30,56 @@ function App() {
       <div className='row main-container'>
         <main className='col-8'>
           <h3>Videók</h3>
-          <div className='container'>
+         
           
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ckom3gf57Yw"></iframe>
+<div className="container">
+    <div className="row">
+        <div className="col-md-4">
+            <div className="embed-responsive embed-responsive-16by9">
+                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/Ckom3gf57Yw"></iframe>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CD-E-LDc384"></iframe>
+        <div className="col-md-4">
+            <div className="embed-responsive embed-responsive-16by9">
+                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/CD-E-LDc384"></iframe>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/E0ozmU9cJDg"></iframe>
+        <div className="col-md-4">
+            <div className="embed-responsive embed-responsive-16by9">
+                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/E0ozmU9cJDg"></iframe>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
+<h3>Képek</h3>
+<div className="container">
+      <div className="row">
+        <div className="col-md-4">
+          <div className="image-container">
+            <img src={tacsko} alt="Szálkásszőrű tacskó" />
           </div>
+        </div>
+        <div className="col-md-4">
+          <div className="image-container">
+            <img src={auto1} alt="Piros Auto" />
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="image-container">
+            <img src={auto2} alt="Kék Auto" className='image-fluid'/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+          
         </main>
         <aside className='col-4'>
           <h3>Archiv tartalom</h3>
